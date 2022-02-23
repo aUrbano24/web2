@@ -1,0 +1,52 @@
+html { /*Asigno los colores a los que luego voy a acceder*/
+    --dark: #16191C; 
+    --dark-x: #1E2126; 
+    --light: #ffffff;
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 300;
+    color: var(--light); /*Aplicar el color light a todos los elementos de del vody*/
+}
+
+.text-light { color: var(--light) !important; }
+.bg-dark { background-color: var(--dark) !important; }
+.bg-dark-x { background-color: var(--dark-x); }
+
+.btn {
+    min-height: 3.125rem;
+    font-weight: 600;
+}
+
+.form-control {
+    min-height: 3.125rem;
+    line-height: initial;
+}
+.form-control:focus {
+    background-color: var(--dark-x);
+    outline: none;
+}
+/*Estilos en las imagenes del corrousel*/
+.img-1 {
+    background-image: url('../imagenes/portatil_msi.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.img-2 {
+    background-image: url('../imagenes/ordenador_msi.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.img-3{
+    background-image: url('../imagenes/placa_base_msi.jpg');
+    background-size: cover;
+    background-position: center;
+}
+/*Para cuando clickemos en el input que el borde se vea rojo*/
+textarea:focus, input:focus, input[type]:focus {
+    border-color: rgb(255, 0, 0);
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgb(255, 0, 0);
+    outline: 0 none;
+}

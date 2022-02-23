@@ -1,0 +1,30 @@
+html,
+body {
+  margin: 0;
+  font-family: 'Spartan', sans-serif;
+  background-color:     #E1E2E1;  
+}
+header{
+background: linear-gradient(to right, #ff0000, #771717); 
+border-bottom: 1px solid black;
+}
+.card {
+  border-radius: 18px; /*No puedo conseguir este parametro de redondeo ni ninguno similar con boostrap*/
+  max-width: 1000px;
+}
+
+.card-header{
+background: linear-gradient(to right, #f70707, #882c29);
+color:white;
+}
+textarea {
+  height: 200px;
+}
+span {
+  color: red;
+}
+input:focus, input[type]:focus, select[type]:focus, select:focus {
+  border-color: rgb(255, 0, 0);
+  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgb(255, 0, 0);
+  outline: 0 none;
+}
