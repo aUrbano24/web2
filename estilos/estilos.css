@@ -12,6 +12,9 @@ border-bottom: 1px solid black;
   border-radius: 18px; /*No puedo conseguir este parametro de redondeo ni ninguno similar con boostrap*/
   max-width: 1000px;
 }
+th {
+  color: rgb(245, 234, 234);
+}
 
 .card-header{
 background: linear-gradient(to right, #f70707, #882c29);
@@ -28,3 +31,4 @@ input:focus, input[type]:focus, select[type]:focus, select:focus {
   box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgb(255, 0, 0);
   outline: 0 none;
 }
+
