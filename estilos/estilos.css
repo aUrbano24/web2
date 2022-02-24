@@ -1,8 +1,7 @@
-html,
-body {
+html, body {
   margin: 0;
-  font-family: 'Spartan', sans-serif;
-  background-color:     #E1E2E1;  
+  font-family: 'Spartan', sans-serif; 
+  background-image: url(../imagenes/fondo_msi.png);
 }
 header{
 background: linear-gradient(to right, #ff0000, #771717); 
