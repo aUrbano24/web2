@@ -15,6 +15,7 @@
       <h1 class="text-center py-3 text-danger"> <img src="./imagenes/logo_msi.png" width="100px" alt="">LISTADO DE CLIENTES</h1>
       <div class="table-responsive">
         <table class="table table-striped table-hover align-middle">
+          <!--Contedendor de la cabecera de la tabla-->
             <thead>
               <tr class="table-success">
                 <th scope="col" class="bg-danger">#</th>
@@ -22,10 +23,10 @@
                 <th scope="col" class="bg-danger">Apellidos</th>
                 <th scope="col" class="bg-danger">Dirección</th>
                 <th scope="col" class="bg-danger">Cod. post</th>
-                <th scope="col" class="bg-danger">Comentario</th>
                 <th scope="col" class="bg-danger">Provincia</th>
-                <th scope="col" class="bg-danger">Nick</th>
                 <th scope="col" class="bg-danger">Email</th>
+                <th scope="col" class="bg-danger">Nick</th>
+                <th scope="col" class="bg-danger">Comentario</th>
                 <th scope="col" class="bg-danger">Editar</th>
                 <th scope="col" class="bg-danger">Borrar</th>
               </tr>
@@ -33,16 +34,17 @@
             <!-- para maquetar, ponemos datos en las celdas a mano, pero en realidad, las filas se generan dentro de un bucle for, que recorre las filas devueltas por una query
             "SELECT * FROM tabla" de la base de datos-->
             <tbody>
+              <!--A partir de ahora cada tr es una fila de datos-->
               <tr>
                 <th scope="row">1</th>
                 <td>Alfonso</td>
                 <td>Urbano</td>
-                <td>C.futbol</td>
+                <td>C.futbol 16</td>
                 <td>29000</td>
-                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque provident laboriosam voluptatum vel hic laborum excepturi sapiente assumenda qui nemo? Ab incidunt velit aperiam aspernatur. Ipsum doloribus omnis neque totam?</td>
                 <td>Cordoba</td>
-                <td>aUrbano</td>
                 <td>alfonso@gmail.com</td>
+                <td>aUrbano</td>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque provident laboriosam voluptatum vel hic laborum excepturi sapiente assumenda qui nemo? Ab incidunt velit aperiam aspernatur. Ipsum doloribus omnis neque totam?</td>
                 <!-- el icono del lápiz queda encuadrado en un vínculo en el que se abre la ventana de edición. Programado en JSP, enviaría con la URL los datos del cliente en particular que se edita para cargar los campos del formulario de edición -->
                 <td><a href="./edicion.html" target="_blank"><i class="bi bi-pencil-square fs-3 text-success"></i></a></td>
                 <!-- el icono de la basura, dispara la aparición de una ventana de confirmación, con 2 botones: aceptar y cancelar. Según el que pulse, se cierra la ventana y se obtiene uno de dos valores: true y false. Si true, se sigue borrando, si false se aborta la operación -->
@@ -52,12 +54,12 @@
                 <th scope="row" style="color: black;">2</th>
                 <td>Antonio</td>
                 <td>Carmona</td>
-                <td>C.Jaque</td>
+                <td>C.Jaque 12</td>
                 <td>14548</td>
-                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque provident laboriosam voluptatum vel hic laborum excepturi sapiente assumenda qui nemo? Ab incidunt velit aperiam aspernatur. Ipsum doloribus omnis neque totam?</td>
-                <td>Malaga</td>
-                <td>aCarmona</td>
+                <td>Málaga</td>
                 <td>antonio@gmail.com</td>
+                <td>aCarmona</td>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque provident laboriosam voluptatum vel hic laborum excepturi sapiente assumenda qui nemo? Ab incidunt velit aperiam aspernatur. Ipsum doloribus omnis neque totam?</td>
                 <td><a href="./edicion.html" target="_blank"><i class="bi bi-pencil-square fs-3 text-success"></i></a></td>
                 <td><i class="bi bi-trash text-danger fs-3" onclick="confirm('Estás seguro de que quieres BORRAR este registro?')"></i></td>
               </tr>
@@ -65,12 +67,12 @@
                 <th scope="row">3</th>
                 <td>Jose</td>
                 <td>Ruz</td>
-                <td>12300</td>
+                <td>C.chiringos 52</td>
                 <td>29000</td>
-                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque provident laboriosam voluptatum vel hic laborum excepturi sapiente assumenda qui nemo? Ab incidunt velit aperiam aspernatur. Ipsum doloribus omnis neque totam?</td>
                 <td>Almeria</td>
-                <td>Jruz</td>
                 <td>jose@gmail.com</td>
+                <td>Jruz</td>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque provident laboriosam voluptatum vel hic laborum excepturi sapiente assumenda qui nemo? Ab incidunt velit aperiam aspernatur. Ipsum doloribus omnis neque totam?</td>
                 <td><a href="./edicion.html" target="_blank"><i class="bi bi-pencil-square fs-3 text-success"></i></a></td>
                 <td><i class="bi bi-trash text-danger fs-3" onclick="confirm('Estás seguro de que quieres BORRAR este registro?')"></i></td>
               </tr>
@@ -78,12 +80,12 @@
                 <th scope="row" style="color: black;">4</th>
                 <td>Alejandro</td>
                 <td>Perez</td>
-                <td>12300</td>
+                <td>Calle San Miedo 12</td>
                 <td>30000</td>
-                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque provident laboriosam voluptatum vel hic laborum excepturi sapiente assumenda qui nemo? Ab incidunt velit aperiam aspernatur. Ipsum doloribus omnis neque totam?</td>
                 <td>Huelva</td>
-                <td>Alex</td>
                 <td>alejandro@gmail.com</td>
+                <td>Alex</td>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque provident laboriosam voluptatum vel hic laborum excepturi sapiente assumenda qui nemo? Ab incidunt velit aperiam aspernatur. Ipsum doloribus omnis neque totam?</td>
                 <td><a href="./edicion.html" target="_blank"><i class="bi bi-pencil-square fs-3 text-success"></i></a></td>
                 <td><i class="bi bi-trash text-danger fs-3" onclick="confirm('Estás seguro de que quieres BORRAR este registro?')"></i></td>
               </tr>
@@ -91,12 +93,12 @@
                 <th scope="row">5</th>
                 <td>Perfecto</td>
                 <td>Soler</td>
-                <td>12300</td>
+                <td>Calle Ancha 42</td>
                 <td>32000</td>
-                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque provident laboriosam voluptatum vel hic laborum excepturi sapiente assumenda qui nemo? Ab incidunt velit aperiam aspernatur. Ipsum doloribus omnis neque totam?</td>
                 <td>Cadiz</td>
-                <td>Perfe</td>
                 <td>perfe@gmail.com</td>
+                <td>Perfe</td>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque provident laboriosam voluptatum vel hic laborum excepturi sapiente assumenda qui nemo? Ab incidunt velit aperiam aspernatur. Ipsum doloribus omnis neque totam?</td>
                 <td><a href="./edicion.html" target="_blank"><i class="bi bi-pencil-square fs-3 text-success"></i></a></td>
                 <td><i class="bi bi-trash text-danger fs-3" onclick="confirm('Estás seguro de que quieres BORRAR este registro?')"></i></td>
               </tr>
@@ -159,7 +161,7 @@
                             <div class="row">
                               <div class="col-md-4 mb-3">
                                 <label for="CodigoPostal">Código Postal<span>*</span></label>
-                                <input name="CodigoPostal" type="text" class="form-control" id="CodigoPostal" placeholder="" value="" required>
+                                <input name="CodigoPostal" type="number" class="form-control" id="CodigoPostal" placeholder="" value="" required>
                                 <div class="valid-feedback">¡Ok válido!</div>
                                 <div class="invalid-feedback">Complete el campo.</div>    
                               </div>

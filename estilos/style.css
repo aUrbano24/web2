@@ -7,7 +7,7 @@ html { /*Asigno los colores a los que luego voy a acceder*/
 body {
     font-family: 'Spartan', sans-serif;
     font-weight: 300;
-    color: var(--light); /*Aplicar el color light a todos los elementos de del vody*/
+    color: var(--light); /*Aplicar el color light a todos los elementos de del Body*/
 }
 
 .text-light { color: var(--light) !important; }
